@@ -967,7 +967,7 @@ first_try:
 error:
 	kfree(data);
 	if (ret < 0)
-		pr_err("Error: returning %zd value\n", ret);
+		/*pr_err("Error: returning %zd value\n", ret);*/
 	return ret;
 }
 
