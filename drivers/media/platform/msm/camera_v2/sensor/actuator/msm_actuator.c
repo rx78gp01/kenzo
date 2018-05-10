@@ -97,13 +97,6 @@ static void msm_actuator_parse_i2c_params(struct msm_actuator_ctrl_t *a_ctrl,
 	struct msm_camera_i2c_reg_array *i2c_tbl = NULL;
 	CDBG("Enter\n");
 
-#ifdef CONFIG_MACH_XIAOMI_KENZO
-	if(i2c_tbl == NULL) {
-		pr_err("i2c_tbl is null!\n");
-		return;
-	}
-#endif
-
 	if ((!a_ctrl) ||
 		(!a_ctrl->reg_tbl) ||
 		(!a_ctrl->i2c_reg_tbl)) {
