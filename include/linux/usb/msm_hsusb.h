@@ -571,6 +571,7 @@ struct msm_otg {
 	u8 active_tmout;
 	struct hrtimer timer;
 	struct power_supply usb_psy;
+	enum power_supply_type usb_supply_type;
 	unsigned int online;
 	unsigned int host_mode;
 	unsigned int voltage_max;
